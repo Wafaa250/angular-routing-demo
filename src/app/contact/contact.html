@@ -1,0 +1,8 @@
+<h2>Contact Page</h2>
+
+<input [(ngModel)]="email" placeholder="Enter your email">
+<button (click)="submit()">Submit</button>
+
+<p *ngIf="submitted">
+  Thank you {{ email }}! We will contact you soon.
+</p>
